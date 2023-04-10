@@ -44,14 +44,15 @@ Bài tập lớn: No Mercy(lập trình nâng cao-INT 2215-22, nhóm 3)
 
 -![image](https://user-images.githubusercontent.com/125808502/230950836-7d80b328-d7ef-4e70-a76c-90ba549c8a3c.png)
 
--rồi chạy code.
+- rồi chạy code.
 
--YÊU CẦU: máy đã cài đặt sẵn SDL...
+- YÊU CẦU: máy đã cài đặt sẵn SDL...
 
 # Nguồn:
 
 - lazyfoo.
-- ảnh vẽ từ canva và paint, boss cuối lấy từ gif trên mạng.
+- ảnh vẽ chay từ canva và paint, có một số cái xin từ canva
+- ảnh boss cuối, pizza, nuttela,chocolate,popcorn lấy từ gif trên mạng.
 
 
 
