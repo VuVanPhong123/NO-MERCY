@@ -53,7 +53,8 @@ Bài tập lớn: No Mercy(lập trình nâng cao-INT 2215-22, nhóm 3)
 - lazyfoo.
 - ảnh vẽ chay từ canva và paint, có một số cái xin từ canva
 - ảnh boss cuối, pizza, nuttela,chocolate,popcorn lấy từ gif trên mạng.
-
+- nhạc: metamorphosis bản instrumental(không lời) từ youtube
+- sound effect("game over"): giọng google dịch.
 
 
 
