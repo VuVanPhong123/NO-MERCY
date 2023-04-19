@@ -75,7 +75,7 @@ SDL_Texture* backgroundTexture=NULL;
 
 
 
-SDL_Texture* Meteoroid[12];
+SDL_Texture* Meteoroid[9];
 SDL_Texture* spriteUFO =NULL;
 
 SDL_Texture* Cloud[10];
@@ -176,7 +176,7 @@ bool loadMedia()
             Fragment[i][j]=loadColorKeyTexture( "LV3/Fragment.png" );
     for (int i=0;i<5;i++)
         Tornado[i]=loadColorKeyTexture( "LV4/Tornado.png" );
-    for (int i=0;i<12;i++)
+    for (int i=0;i<9;i++)
         Meteoroid[i]=NULL;
     for (int i=0;i<4;i++)
         AtomicBomb[i]=NULL;
@@ -279,7 +279,7 @@ bool loadMedia()
         printf( "Failed to load sprite UFO texture image!\n" );
         success = false;
     }
-    for (int i=0;i<12;i++)
+    for (int i=0;i<9;i++)
     {
     Meteoroid[i] = loadColorKeyTexture( "LV1/meteoroid.png" );
     if( Meteoroid[i] == NULL )
@@ -550,7 +550,7 @@ void close()
             SDL_DestroyTexture(endgame[i]);
             endgame[i]=NULL;
         }
-    for (int i=0;i<12;i++)
+    for (int i=0;i<9;i++)
         {
             SDL_DestroyTexture (Meteoroid[i]);
             Meteoroid[i]=NULL;
@@ -710,9 +710,9 @@ int main( int argc, char* args[] )
     int MeteroidNum=0;
     double xMeteoroid[20],yMeteoroid[20],xUFO[20],yUFO[20];
     SDL_Rect UFORect = { 470, 325, SPRITE_WIDTH, SPRITE_HEIGHT };
-    SDL_Rect MeteoroidRect[12] ;
+    SDL_Rect MeteoroidRect[9] ;
 
-     for (int i=0;i<12;i++)
+     for (int i=0;i<9;i++)
     {
          MeteoroidRect[i] = {-10 ,-10 , 30, 30 };
     }
@@ -860,7 +860,7 @@ int main( int argc, char* args[] )
                             if (e.type == SDL_KEYDOWN && e.key.keysym.sym == SDLK_x)
                                 {
                                     a++;
-                                    Mix_VolumeMusic(MIX_MAX_VOLUME/10);
+                                    Mix_VolumeMusic(MIX_MAX_VOLUME/6);
                                 }
                             if( e.type == SDL_QUIT )
                             {
@@ -911,7 +911,7 @@ int main( int argc, char* args[] )
                     SDL_RenderCopy( gRenderer, spriteUFO, NULL, &UFORect );
                     if (CheckGameOver==true)
                         {
-                            for (int i=0;i<12;i++)
+                            for (int i=0;i<9;i++)
                                 {
                                     if (MeteoroidRect[i].x<=0||MeteoroidRect[i].x>=1000||MeteoroidRect[i].y>=700||MeteoroidRect[i].y<=0)
                                         {
@@ -927,17 +927,17 @@ int main( int argc, char* args[] )
 
                     if (CheckGameOver==true)
                         {
-                            for (int i=0;i<12;i++)
+                            for (int i=0;i<9;i++)
                                 {
                                     movingMeteoroid(MeteoroidRect[i],xMeteoroid[i],yMeteoroid[i],xUFO[i],yUFO[i]);
                                 }
                         }
 
-                    for (int i=0;i<12;i++)
+                    for (int i=0;i<9;i++)
                         {
                             SDL_RenderCopy( gRenderer, Meteoroid[i], NULL,&MeteoroidRect[i]);
                         }
-                    for (int i=0;i<12;i++)
+                    for (int i=0;i<9;i++)
                     if (Detecting_Collision(MeteoroidRect[i],UFORect)==true)
                         {
                             CheckGameOver=false;
@@ -952,10 +952,10 @@ int main( int argc, char* args[] )
 
                         }
                     //Update screen
-                    if (MeteroidNum>=100)
+                    if (MeteroidNum>=70)
                         {
                             a++;
-                            for (int i=0;i<12;i++)
+                            for (int i=0;i<9;i++)
                                 {
                                     MeteoroidRect[i] = {-10 ,-10 , 30, 20 };
                                 }
@@ -975,7 +975,7 @@ int main( int argc, char* args[] )
                         {
                                     a--;
                                     CheckGameOver=true;
-                                    for (int i=0;i<12;i++)
+                                    for (int i=0;i<9;i++)
                                 {
                                     MeteoroidRect[i] = {-10 ,-10 , 30, 20 };
                                 }
@@ -1522,7 +1522,7 @@ int main( int argc, char* args[] )
                                     chunk=true;
                                 }
                             }
-                    if (wave4>=40)
+                    if (wave4>=30)
                     {
                         FlyingFanState=0;
                         angle=0;
@@ -2018,7 +2018,7 @@ int main( int argc, char* args[] )
                                         movingMeteoroid(chocolateRect[i],xMeteoroid[i+15],yMeteoroid[i+15],xUFO[i+15],yUFO[i+15]);
                                 }
 
-                            if (conditionToPass>=150)
+                            if (conditionToPass>=70)
                             {
                                 BossCat=2;
                                 conditionToPass=0;
@@ -2158,4 +2158,3 @@ int main( int argc, char* args[] )
 
     return 0;
 }
-
