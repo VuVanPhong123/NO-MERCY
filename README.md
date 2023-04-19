@@ -20,7 +20,6 @@ Bài tập lớn: No Mercy(lập trình nâng cao-INT 2215-22, nhóm 3)
 
 ... còn nữa.
 
-- LƯU Ý: Game max khó.
 
 # preview
 
@@ -29,32 +28,12 @@ Bài tập lớn: No Mercy(lập trình nâng cao-INT 2215-22, nhóm 3)
 ![image](https://user-images.githubusercontent.com/125808502/230949274-7f83c7c3-fc2b-4faa-992d-42f059ffa404.png)
 ![image](https://user-images.githubusercontent.com/125808502/230949434-c73ab161-b0bb-47f0-af5d-dc67af4591b5.png)
 
-# cách tải:
-- tải file game(bấm vào nút màu xanh lá rồi bấm "download zip":
-
-![image](https://user-images.githubusercontent.com/125808502/230950226-fb4fddb1-d87c-4474-9e5f-8ba4b9bf09df.png)
-
-- giải nén.
-
-- vào codeblock rồi bấm " open an existing project" .
-
-![image](https://user-images.githubusercontent.com/125808502/230950756-22495eb1-53c7-4182-a0b4-07efa76f629a.png)
-
-- bấm vào NO Mercy.
-
--![image](https://user-images.githubusercontent.com/125808502/230950836-7d80b328-d7ef-4e70-a76c-90ba549c8a3c.png)
-
-- rồi chạy code.
-
-- YÊU CẦU: máy đã cài đặt sẵn SDL...
 
 # Nguồn:
 
 - lazyfoo.
-- ảnh vẽ chay từ canva và paint, có một số cái xin từ canva
-- ảnh boss cuối, pizza, nuttela,chocolate,popcorn lấy từ gif trên mạng.
+- ảnh vẽ từ canva và paint.
 - nhạc: metamorphosis bản instrumental(không lời) từ youtube
-- sound effect("game over"): giọng google dịch.
 
 
 
