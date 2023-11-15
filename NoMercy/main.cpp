@@ -8,7 +8,7 @@
 using namespace std;
 
 
-const int SCREEN_WIDTH = 999;
+const int SCREEN_WIDTH = 1000;
 const int SCREEN_HEIGHT = 700;
 
 const int SPRITE_WIDTH = 25;
